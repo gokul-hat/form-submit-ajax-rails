@@ -1,0 +1,10 @@
+<h1>Book Details</h1>
+<div class="col-lg-12 mt-5 mb-5">
+  <p><strong>Title:</strong> <%= @book.titile %></p>
+  <p><strong>Price:</strong> <%= @book.price %></p>
+  <p><strong>Author:</strong> <%= @book.author %></p>
+  <p><strong>Genre:</strong> <%= @book.genre %></p>
+
+  <%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-warning' %>
+  <%= link_to 'Back to list', books_path(@book), class: 'btn btn-secondary' %>
+</div>
